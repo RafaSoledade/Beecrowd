@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+
+    public static void main(String []Args){
+        Scanner entrada = new Scanner(System.in);
+
+        int tempo = entrada.nextInt();
+        int velocidadeMedia = entrada.nextInt();
+        int distanciaPercorida;
+
+        distanciaPercorida = tempo * velocidadeMedia;
+        double litros = distanciaPercorida/12.0;
+
+        System.out.printf("%.3f%n", litros);
+    }
+}
