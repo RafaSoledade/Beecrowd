@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+
+    public static void main(String []Args){
+        Scanner entrada = new Scanner(System.in);
+        int km = entrada.nextInt();
+
+        int saida = km * 2;
+        System.out.println(saida + " minutos");
+    }
+}
