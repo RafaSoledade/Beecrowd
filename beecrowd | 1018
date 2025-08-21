@@ -1,0 +1,29 @@
+import java.util.Scanner; 
+
+public class Main{
+    
+    public static void main (String []args){
+    Scanner entrada = new Scanner(System.in);
+    
+    //Declaração/Input
+    
+    int[] notas = {100, 50, 20, 10, 5, 2, 1};
+    int[] notasMinimas = new int[notas.length];
+    int  valor = entrada.nextInt();
+    int restante = valor;
+    
+    //Função
+    
+    for(int i=0; i<notas.length; i++){
+        notasMinimas[i] = restante / notas[i];
+        restante = restante % notas[i];
+        
+    }
+    
+    // Saída
+    System.out.println(valor);
+    for (int i=0; i<notas.length; i++){
+        System.out.println(notasMinimas[i] + " nota(s) de R$ " + notas[i] + ",00");
+    }
+}
+}
